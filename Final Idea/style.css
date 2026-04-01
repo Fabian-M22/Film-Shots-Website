@@ -1,0 +1,397 @@
+html, body {
+    margin:0;
+    background-image: url(/img/vanburn-gonsalves-2sL1LoHSRMA-unsplash.jpg);
+    background-size: 100%;
+    background-blend-mode:lighten;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 20% 50% 10% 10% 10%;
+    margin: 0;
+    margin-bottom: 0px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: white;
+}
+
+nav a {
+    border-left: 1px solid black;
+    font-size: 20pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: black;
+    background-color: white;
+    padding-top: 1.4rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    color: white;
+    background-color: black;
+}
+
+.first-split {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.longshot {
+    display: grid;
+    grid-template-columns: 33.33% 66.66%;
+    text-decoration: none;
+    border: 1px solid black;
+    padding-bottom: 0;
+    transition: all;
+    -webkit-transition: all 0.4s;
+    background-color: white;
+}
+
+.longshot:hover {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    transition: all;
+    -webkit-transition: all 0.4s;
+}
+
+.longshot-box {
+    height: 303px;
+    overflow:hidden;
+}
+
+.longshot img{
+    height: 100%;
+    margin-bottom: 0px;
+}
+
+.longshot #long-shot{
+    font-size: 45pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    margin-top: 50px;
+    color: black;
+    margin: 2rem;
+}
+
+.visual-border {
+    margin-top: 2.083vw;
+    margin-right: 2.083vw;
+    background-color: white;
+    transition: all;
+    -webkit-transition: all 0.4s;
+}
+
+.visual-border:hover {
+    transition: all;
+    -webkit-transition: all 0.1s;
+    border: 10px solid black;
+}
+
+.title {
+    font-size: 50pt;
+    font-family: Helvetica;
+    color: black;
+    border-right: 1px solid black;
+    margin-left: 10px;
+}
+
+.grid-med {
+    display: grid;
+    grid-template-columns: 66.66% 33.33%;
+    padding: 2.083vw;
+    padding-bottom: 0px;
+    border-right: 1px solid black;
+    height: 550px;
+}
+
+.grid-med-img {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 550px;
+    object-position:center;
+}
+
+#med-shots{
+    font-size: 70pt;
+    font-family: Helvetica;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+a .caption {
+    text-decoration: none;
+    color: white;
+    font-family: Helvetica;
+    font-size: 18pt;
+    background-color: black;
+    padding: 0.5rem;
+    margin-top: 5px;
+}
+
+#content-item {
+    overflow: hidden;
+    border: 1px solid black;
+}
+#content-item .item{
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;    
+    height:500px;
+    width:500px;
+}
+#content-item .item img {
+    height:300px;
+    margin-left: -25%;
+}
+#content-item .item:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+#content-item .item .caption {
+    position:absolute;
+    margin-left: 5px;
+    opacity: 0;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+#content-item .item:hover .caption {
+    opacity: 1;
+}
+
+.border-full {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 0;
+}
+
+.border {
+    border: 1px solid black;
+    border-right: 0px;
+    padding: 3rem;
+    text-decoration: none;
+    transition: all;
+    -webkit-transition: all 0.4s;
+    background-color: white;
+}
+
+.border:hover {
+    border: 10px solid black;
+    border-right: 0px;
+    transition: all;
+    -webkit-transition: all 0.1s;
+}
+
+.closeups {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 2.083vw;
+    height: 500px;
+}
+
+#cu-boxes {
+    overflow: hidden;
+    height: 502px;
+    position: flex;
+}
+
+#cu-text {
+    font-size: 45pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color: White;
+    margin: 2rem;
+    margin-top: -100px;
+    margin-bottom: -10px;
+    position: absolute;
+}
+
+.closeups .closeup-shot:hover #cu-text {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.closeups .closeup-shot{
+    margin-right:1.0416vw;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+.closeups .closeup-shot img{
+    height:100%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.closeups .closeup-shot:hover img{
+    height:100%;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.closeups .ecu-shot img{
+    height:100%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.closeups .ecu-shot:hover img{
+    height:100%;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.closeups .ecu-shot{
+    margin-left:1.0416vw;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+#ecu-text {
+    font-size: 45pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    color: White;
+    margin: 2rem;
+    margin-top: -100px;
+    position:absolute;
+}
+
+.closeups .ecu-shot:hover #ecu-text {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.grid-full {
+    display: grid;
+    grid-template-columns: 100%;
+    background-image:url("img/Armageddon-62.jpg");
+    width:100%;
+    height:74%;
+    object-fit: cover;
+    transition: all;
+    -webkit-transition: all 0.4s;
+    text-decoration: none;
+    border-top: 1px solid black;
+}
+
+.grid-full:hover * {
+    color: black;
+    transition: all;
+    -webkit-transition: all 0.4s;
+}
+.grid-full #text-fullshot1:hover{
+    color: black;
+} 
+
+.grid-full #text-fullshot2:hover {
+    color: black;
+}
+
+.grid-full #text-fullshot1 {
+    color: white;
+    font-size: 200pt;
+    font-family: Helvetica;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: none;
+    margin-top:100px;
+}
+.grid-full #text-fullshot2 {
+    color: white;
+    font-size: 70pt;
+    font-family: Helvetica;
+    font-weight: 900;
+    text-align: center;
+    margin-top: -160px;
+}
+
+.big-image{
+    border: 1px solid black;
+    border-top: 0px;
+}
+
+.big-image img{
+    width:100%;
+}
+
+.shot-grid {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-top:-30%;
+}
+
+.shot-text-box {
+    background-color: white;
+    margin: 2.083vw;
+    padding: 2rem;
+}
+
+.shot-text-box p{
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.shot-text-box h2{
+    font-size: 30pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-top: -4px;
+}
+
+.shot-text-box a{
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    color: blue;
+}
+
+.button-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.button{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: helvetica;
+    padding: 0.5rem;
+    margin:1rem;
+    width: 150px;;
+}
+
+.about-grid{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+
+.about-text-box {
+    background-color: white;
+    margin: 2.083vw;
+    padding: 2rem;
+}
+
+.about-text-box p{
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    padding-bottom: 20px;
+}
